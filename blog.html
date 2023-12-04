@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>PH Tube</title>
+     <!-- tailwind and daisy Ui link -->
+    <link
+    href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css"
+    rel="stylesheet"
+    type="text/css"
+  />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- font link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <script src="https://kit.fontawesome.com/b15574ec5a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+     <header> 
+          <h1 class="text-center lg:text-5xl md:text-5xl text-3xl mt-4 font-extrabold text-[#FF1F3D]">Blog Questions</h1> 
+     </header>
+     <main>
+          
+          <section class="lg:px-40 md:p-32 p-10 py-10 ">
+               <div class="collapse collapse-arrow bg-base-200  ">
+                    <input type="radio" name="my-accordion-2"  /> 
+                    <div class="collapse-title lg:text-2xl text-xl font-medium p-4">
+                         Discuss the scope of var, let, and const
+                    </div>
+                    <div class="collapse-content "> 
+                      <h1 class="text-xl font-semibold">Var Scope</h1>
+                      <ol class="list-decimal ml-7 mb-4">
+                        <li>The scope of a var variable is functional scope.</li>
+                      <li>It can be updated and re-declared into the scope..</li>
+                      <li>It can be declared without initialization.</li>
+                      <li>Hoisting done, with initializing as 'default' value</li> 
+                      </ol>
+                      <h1 class="text-xl font-semibold">Let Scope</h1>
+                      <ol class="list-decimal ml-7 mb-4">
+                         <li>The scope of a let variable is block scope.</li>
+                      <li>It can be updated but cannot be re-declared into the scope</li>
+                      <li>It can be declared without initialization.</li>
+                      <li>It cannot be accessed without initialization otherwise it will give 'referenceError'.</li>
+                      </ol>
+                      
+                      <h1 class="text-xl font-semibold">Const Scope</h1>
+                      <ol class="list-decimal ml-7 ">
+                         <li>The scope of a const variable is block scope.</li>
+                         <li>It cannot be updated or re-declared into the scope.</li>
+                         <li>It cannot be declared without initialization.</li>
+                         <li>It cannot be accessed without initialization, as it cannot be declared without initialization.</li>
+                      </ol>
+                      
+                    </div>
+                  </div>
+                  <div class="collapse collapse-arrow bg-base-200">
+                    <input type="radio" name="my-accordion-2" /> 
+                    <div class="collapse-title lg:text-2xl text-xl font-medium">
+                         Tell us the use cases of null and undefined
+                    </div>
+                    <div class="collapse-content ml-4">
+                         <p class="text-lg font-medium">In JavaScript, there are two distinct entities that express the absence of a (meaningful) value, in contrast to many other languages. Undefined and null both exist.</p> 
+                         <h1 class="text-xl font-semibold mt-5 mb-3">Null</h1>
+                         <p>The primitive value null is used as an intentional "empty value" for a variable. In other languages, a similar construct might be used only for (missing) objects or pointer types. In JavaScript null generally represents an empty value for any type.You can check whether a variable is null by using the strict equality operator ===. Although null is a primitive value, the typeof operator "wrongly" returns object for historic reasons. That means it cannot be used by itself to check whether a variable is null.</p>
+                         <h1 class="text-xl font-semibold mt-5">Undefined</h1>
+                         <p class="text-xl mb-4 mt-2">undefined appears in different contexts.</p>
+                         <ul class="list-decimal ml-6">
+                              <li>If a variable is declared without a value (initialization), it is undefined.</li>
+                              <li>If you try to access a value for a non-existing key in an object, you get undefined.</li>
+                              <li>If a function does not return a value, the result is undefined.</li>
+                              <li>If an argument is not passed to a function, it is undefined, unless that argument has a default value.</li>
+                         </ul>
+                         <p class="text-xl font-medium mt-6">You can check whether a variable is undefined using the strict equality operator === or the typeof operator.It is not recommended to manually assign undefined to a variable, always use null instead to make it clear you set an empty value intentionally.</p>
+                    </div>
+                  </div>
+                  <div class="collapse collapse-arrow bg-base-200">
+                    <input type="radio" name="my-accordion-2" /> 
+                    <div class="collapse-title lg:text-2xl text-xl font-medium ">
+                         What do you mean by REST API?
+                    </div>
+                    <div class="collapse-content"> 
+                         <h1 class="text-xl font-semibold mb-4">REST API</h1>
+                         <p class="text-md font-medium mb-4">A REST API (Representational State Transfer Application Programming Interface) is an architectural style and set of conventions for designing web services. It embodies several key principles:</p>
+                         
+                              <ul class=" list-decimal ml-6 p-3">
+                                   <li>Stateless: Each request from a client to a server must contain all the information needed to understand and process it. No client session state should be stored on the server between requests</li>
+                                   <li>Client-Server: A separation of concerns between client and server, allowing them to evolve independently. This architecture improves scalability and flexibility.</li>
+                                   <li>Resource-Based: Resources (e.g., objects, documents, concepts) are central and identified by URLs. They are manipulated using standard HTTP methods like GET, POST, PUT, and DELETE</li>
+                                   <li>Representation: Resources can have multiple representations (e.g., JSON, XML, HTML). Clients specify their preferred representation through HTTP headers.</li>
+                                   <li>Uniform Interface: A consistent and predictable way of interacting with resources, simplifying client development and fostering scalability.</li>
+                              </ul>
+                         
+                    </div>
+                  </div> 
+                  <div class="text-end mt-20">
+                  <a href="/index.html" class=" cursor-pointer bg-[#FF1F3D] hover:text-black text-white py-2 px-5 rounded-md text-lg font-medium"><i class="fa-solid fa-arrow-left"></i>   Back Home</a>
+                    </div>
+          </section>
+
+     </main>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PH Tube</title>
+    <!-- tailwind and daisy Ui link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="lg:px-16 px-5 ">
+    <header>
+     <!-- Navbar Section -->
+     <section>
+          <div class="navbar bg-base-100 mt-4 mb-4">
+               <div class="navbar-start">
+                 <img src="/photos/Logo.png" alt="">
+               </div>
+               <div class="navbar-center ml-3">
+                    <button  id="sort-views" class="bg-slate-300 hover:bg-[#FF1F3D] hover:text-white py-2 lg:px-5 px-3 rounded-md text-lg font-medium">Sort by view</button>
+               </div>
+               <div class="navbar-end ">
+                    <a href="/blog.html" class="bg-[#FF1F3D] cursor-pointer hover:text-black text-white py-2 px-5 rounded-md text-lg font-medium">Blog</a>
+               </div>
+             </div>
+             <hr class="border">
+             
+     </section>
+    </header>
+    <main>
+     <!-- btn section -->
+     <section class="">
+          <div class=" mt-5 flex items-center justify-center gap-4" id="btn-container"></div>
+     </section>
+     <!-- card section -->
+     <section id="all-card-container">
+          <div id="card-container" class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1  gap-4 mt-8  "></div>
+          <div id="card-container2"></div>
+          
+          
+          
+     </section>
+     
+    </main>
+    <script src="/js/index.js"></script>
+  </body>
+</html>
